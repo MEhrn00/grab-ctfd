@@ -71,10 +71,7 @@ VerifyURL = lambda url: requests.get(url).status_code == 200
 
 
 # Removes backslash from the end of URLs
-def NormalizeURL(url):
-    if url[-1] == '/':
-        return url[:-1]
-    return url
+NormalizeURL = lambda url: url[:-1] if url[-1] == '/' else url
 
 
 # Returns a set of the challenge names
