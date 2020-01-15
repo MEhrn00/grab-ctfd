@@ -1,8 +1,8 @@
-# ctfd-setup
+# grab-ctfd
 Automatically creates directory structure and downloads files from CTFs using CTFd's API.
 
 ## Usage
-./ctfdsetup.py \<name\> \<url of ctf\> \<username\>
+./grabctfd.py \<name\> \<url of ctf\> \<username\>
 
 name - Name of the CTF.
 
