@@ -67,11 +67,7 @@ def main():
 
 
 # Makes sure that the url is reachable
-def VerifyURL(url):
-    if(requests.get(url).status_code == 200):
-        return True
-    else:
-        return False
+VerifyURL = lambda url: requests.get(url).status_code == 200
 
 
 # Removes backslash from the end of URLs
